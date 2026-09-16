@@ -1,0 +1,10 @@
+# config/_default/languages.en.toml
+
+title = "VAR Blog Website"
+
+[params.author]
+name = "François Grastilleur"
+headline = "A generally awesome human"
+bio = "A little bit about me"
+links = [
+]
