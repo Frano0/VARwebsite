@@ -2,7 +2,7 @@ disabled = false
 locale = "en"
 label = "English"
 weight = 1
-title = "François Grastilleu's Website"
+title = "François Grastilleur's Website"
 
 [params]
   displayName = "EN"
@@ -14,14 +14,14 @@ title = "François Grastilleu's Website"
   # description = "My awesome website"
   # copyright = "Copy, _right?_ :thinking_face:"
 
-# [params.author]
-#   name = "François Grastilleur"
-#   email = "francois.grastilleur@telecom-sudparis.eu"
+[params.author]
+   name = "François Grastilleur"
+   email = "francois.grastilleur@telecom-sudparis.eu"
 #   image = "img/blowfish_logo.png"
 #   imageQuality = 96
 #   headline = "I'm only human"
-#   bio = "Engineering student at Télécom SudParis & Virtual and Augmented Reality Master at Institut Polytechnique de Paris"
-#   links = [
+   bio = "Engineering student at Télécom SudParis & Virtual and Augmented Reality Master at Institut Polytechnique de Paris"
+   links = [
 #     { email = "mailto:hello@your_domain.com" },
 #     { link = "https://link-to-some-website.com/" },
 #     { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
@@ -35,7 +35,7 @@ title = "François Grastilleu's Website"
 #     { facebook = "https://facebook.com/username" },
 #     { flickr = "https://www.flickr.com/photos/username/" },
 #     { foursquare = "https://foursquare.com/username" },
-#     { github = "https://github.com/frano0" },
+     { github = "https://github.com/frano0" },
 #     { github_gist = "https://gist.github.com/username" },
 #     { gitlab = "https://gitlab.com/username" },
 #     { google = "https://www.google.com/" },
@@ -46,7 +46,7 @@ title = "François Grastilleu's Website"
 #     { keyoxide = "https://keyoxide.org/URI" },
 #     { kickstarter = "https://www.kickstarter.com/profile/username" },
 #     { lastfm = "https://lastfm.com/user/username" },
-#     { linkedin = "https://linkedin.com/in/francois-grastilleur" },
+     { linkedin = "https://linkedin.com/in/francois-grastilleur" },
 #     { mastodon = "https://mastodon.instance/@username" },
 #     { matrix = "https://matrix.to/#/URI" },
 #     { medium = "https://medium.com/username" },
