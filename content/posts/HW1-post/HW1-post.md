@@ -6,7 +6,6 @@ determine just how the object could possibly be used." - Don Norman
 
 A simple example of affordance would be cutlery. Their long shape naturally induce how it should held, as well as in which cases they should be used. For example a spoon's curved bowl affords scooping and holding liquids, while a knife's sharper shapes affords cutting.
 
-![Soup Spoon](Soup_Spoon.jpg "Spoon")
 
 <img src="Soup_Spoon.jpg" alt="spoon" width="400"/>
 
