@@ -55,7 +55,7 @@ Many websites use cookies and want their user to accept them. To do this, they u
 {style="width:85%;"}
 <em> Example of a cookie agreement pop-up </em>
 
-![Cookies](./cookies.png "Example of a cookie agreement pop-up2") 
+![Cookies](/VARwebsite/content/posts/HW1-post/cookies.png "Example of a cookie agreement pop-up2") 
 {style="width:85%;"}
 <em> Example of a cookie agreement pop-up </em>
 
