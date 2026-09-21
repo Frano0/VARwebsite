@@ -51,7 +51,11 @@ For example, the Daily Login Reward mechanic rewards the player for each consecu
 Many websites use cookies and want their user to accept them. To do this, they use tactics to make it harder for the user to refuse them. It is mostly done through interface interference and obstruction, as the user can accept all cookies with a single click, but if they want to refuse them, several clicks are required. This would be simply fixed with a "reject all cookies" button, but it would require the website to be more honest and not want to trick the user in the first place.
 
 
-![Cookies](/cookies.png) 
+![Cookies](/cookies.png "Example of a cookie agreement pop-up") 
+{style="width:85%;"}
+<em> Example of a cookie agreement pop-up </em>
+
+![Cookies](./cookies.png "Example of a cookie agreement pop-up2") 
 {style="width:85%;"}
 <em> Example of a cookie agreement pop-up </em>
 
