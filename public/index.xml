@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>François Grastilleur&#39;s Website</title>
-    <link>http://localhost:1313/</link>
+    <link>http://localhost:1313/VARwebsite/</link>
     <description>Recent content on François Grastilleur&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>francois.grastilleur@telecom-sudparis.eu (François Grastilleur)</managingEditor>
     <webMaster>francois.grastilleur@telecom-sudparis.eu (François Grastilleur)</webMaster>
     <copyright>© 2026 François Grastilleur</copyright>
-    <lastBuildDate>Mon, 21 Sep 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 21 Sep 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/VARwebsite/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Affordances, Gestalt Law &amp; Dark Design Patterns</title>
-      <link>http://localhost:1313/posts/hw1-post/hw1-post/</link>
+      <link>http://localhost:1313/VARwebsite/posts/hw1-post/hw1-post/</link>
       <pubDate>Mon, 21 Sep 2026 00:00:00 +0000</pubDate>
       <author>francois.grastilleur@telecom-sudparis.eu (François Grastilleur)</author>
-      <guid>http://localhost:1313/posts/hw1-post/hw1-post/</guid>
+      <guid>http://localhost:1313/VARwebsite/posts/hw1-post/hw1-post/</guid>
       <description></description>
       
     </item>
