@@ -59,3 +59,8 @@ Many websites use cookies and want their user to accept them. To do this, they u
 {style="width:85%;"}
 <em> Example of a cookie agreement pop-up </em>
 
+
+AUtre essai...
+
+{{< image src="cookies.png" alt="Coookie" position="center" style="border-radius: 4px;" >}}
+

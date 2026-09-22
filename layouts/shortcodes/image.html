@@ -1,0 +1,20 @@
+{{- $src := .Get "src" -}}
+{{- $alt := .Get "alt" | default "" -}}
+{{- $position := .Get "position" | default "left" -}}
+{{- $style := .Get "style" | default "" -}}
+
+{{- /* 1. Try to find the image in the same folder as the Markdown file (Page Bundle) */ -}}
+{{- $image := .Page.Resources.GetMatch $src -}}
+
+{{- $imgUrl := "" -}}
+{{- if $image -}}
+  {{- /* Image found next to the post, get its relative permalink */ -}}
+  {{- $imgUrl = $image.RelPermalink -}}
+{{- else -}}
+  {{- /* 2. Fallback for images in the /static folder. relURL adds the GitHub Pages subpath */ -}}
+  {{- $imgUrl = $src | relURL -}}
+{{- end -}}
+
+<div style="text-align: {{ $position }}; width: 100%;">
+  <img src="{{ $imgUrl }}" alt="{{ $alt }}" style="{{ $style }}">
+</div>

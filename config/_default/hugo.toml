@@ -3,7 +3,7 @@
 # https://blowfish.page/docs/getting-started/
 
 theme = "blowfish" # UNCOMMENT THIS LINE
-baseURL = "https://frano0.github.io/"
+baseURL = "https://frano0.github.io/VARwebsite"
 defaultContentLanguage = "en"
 locale = "en"
 
