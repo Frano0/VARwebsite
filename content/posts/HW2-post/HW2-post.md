@@ -29,7 +29,7 @@ He predicted that computers will be interacted with using a keyboard (a "typewri
 Sutherland also describes technologies we don't know of yet. The haptic feedbacks he imagined still isn't as advanced today, so there is still room for improvement and many innovations could emerge in the upcomig years.
 His ultimate ambition is "a room within which the computer can control the existence of matter". This still seems very far today, but maybe this could also become reality !
 
-{{< image src="ivan-sutherland-and-head-mounted-displays.jpg" alt="Sutherland" position="center" style="border-radius: 4px;" >}}
+{{< image src="ivan-sutherland-and-head-mounted-display.jpg" alt="Sutherland" position="center" style="border-radius: 4px;" >}}
 <em> Ivan Sutherland and his head mounted display </em>
 
 
