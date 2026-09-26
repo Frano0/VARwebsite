@@ -9,14 +9,24 @@
     <managingEditor>francois.grastilleur@telecom-sudparis.eu (François Grastilleur)</managingEditor>
     <webMaster>francois.grastilleur@telecom-sudparis.eu (François Grastilleur)</webMaster>
     <copyright>© 2026 François Grastilleur</copyright>
-    <lastBuildDate>Mon, 21 Sep 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/VARwebsite/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 24 Sep 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/VARwebsite/tags/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Human-Computer Interface</title>
       <link>http://localhost:1313/VARwebsite/tags/human-computer-interface/</link>
-      <pubDate>Mon, 21 Sep 2026 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 24 Sep 2026 00:00:00 +0000</pubDate>
       <author>francois.grastilleur@telecom-sudparis.eu (François Grastilleur)</author>
       <guid>http://localhost:1313/VARwebsite/tags/human-computer-interface/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>WIP</title>
+      <link>http://localhost:1313/VARwebsite/tags/wip/</link>
+      <pubDate>Thu, 24 Sep 2026 00:00:00 +0000</pubDate>
+      <author>francois.grastilleur@telecom-sudparis.eu (François Grastilleur)</author>
+      <guid>http://localhost:1313/VARwebsite/tags/wip/</guid>
       <description></description>
       
     </item>

@@ -1,8 +1,8 @@
 +++
 title = "Current research, the Ultimate Display & Input Devices"
-draft = "true"
-date = "2026-09-24"
-tags = ["Human-Computer Interface", "WIP"]
+draft = "false"
+date = "2026-09-26"
+tags = ["Human-Computer Interface"]
 +++
 
 
@@ -35,5 +35,7 @@ His ultimate ambition is "a room within which the computer can control the exist
 
 ## Input Device failing
 
+Here I'll talk about pre-touch sensing. This technology has been discussed more than 10 years ago (see the ACM SIGCHI video), but it has never gone mainstream. While they argue that it adds more depth to mobile interactions and is relatively easy and cheap to integrate to a device, the technology couldn't find its way to our phones. This might be because pre-touch adds a new dimension to how we interact with our device, which it could also adds a way for the device to misinterpret the intention of the user. When the device detects the user approaching it, it might interpret it as them wanting to interact, but it might also be them just moving around. For this main reason, this technology didn't get used much, prefering other ways to interact such as voice command, which is easier for the user to use while still completing complex tasks.
 
-<em> Work in Progress ! </em>
+{{< youtube YO7jy1GXkmY >}}
+<em>  Pre-Touch Sensing for Mobile Interaction, by ACM SIGCHI on Youtube </em>
