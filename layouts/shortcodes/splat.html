@@ -1,0 +1,24 @@
+<div id="splat-viewer-{{ .Ordinal }}" style="width: 100%; height: {{ .Get "height" | default "500px" }}; border-radius: 8px; background-color: #000; position: relative; overflow: hidden;"></div>
+
+<!-- The Import Map tells the browser where to find "three" -->
+<script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.157.0/build/three.module.js"
+    }
+  }
+</script>
+
+<script type="module">
+  import * as GaussianSplats3D from 'https://cdn.jsdelivr.net/npm/@mkkellogg/gaussian-splats-3d@latest/build/gaussian-splats-3d.module.min.js';
+
+  const container = document.getElementById('splat-viewer-{{ .Ordinal }}');
+  
+  const viewer = new GaussianSplats3D.Viewer({
+    'rootElement': container
+  });
+  
+  viewer.addSplatScene('{{ .Get "src" | relURL }}').then(() => {
+    viewer.start();
+  });
+</script>

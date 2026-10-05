@@ -1,0 +1,7 @@
+<script type="module" src="https://cdn.jsdelivr.net/npm/@lumaai/luma-web/+esm"></script>
+
+<!-- Creates the viewer instance -->
+<luma-splat 
+  source="{{ .Get "src" | relURL }}" 
+  style="width: 100%; height: {{ .Get "height" | default "500px" }}; border-radius: 8px; background-color: #000000; display: block;">
+</luma-splat>

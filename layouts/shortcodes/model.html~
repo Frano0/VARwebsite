@@ -1,0 +1,11 @@
+<!-- Loads the model-viewer script -->
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.3.1/model-viewer.min.js"></script>
+
+<!-- Creates the viewer instance -->
+<model-viewer 
+  src="{{ .Get "src" | relURL }}" 
+  alt="{{ .Get "alt" | default "A 3D model" }}" 
+  auto-rotate 
+  camera-controls 
+  style="width: 100%; height: {{ .Get "height" | default "400px" }}; border-radius: 8px;">
+</model-viewer>

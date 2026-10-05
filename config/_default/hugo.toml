@@ -77,3 +77,8 @@ enableEmoji = true
     [markup.goldmark.parser]
       wrapStandAloneImageWithinParagraph = false
 
+[mediaTypes]
+  [mediaTypes."model/gltf-binary"]
+    suffixes = ["glb"]
+  [mediaTypes."application/octet-stream"]
+    suffixes = ["splat"]
