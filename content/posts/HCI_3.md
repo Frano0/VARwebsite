@@ -33,15 +33,15 @@ After the training, we can see that there are a lot of artifacts created, which 
 
 ### Supersplat
 
-To get our finished product, we use Supersplat to visualise the 3D object, as weell as remove any Gaussians that are not relevant to our 
+To get our finished product, we use Supersplat to visualise the 3D object, as well as remove any Gaussians that are not relevant to the object we want to show.
 
 {{< image src="rendu_cleaned.png" alt="Final product" position="center" style="border-radius: 4px;" >}}
 <em> Final result after removing the irrelevant gaussians on Supersplat</em>
 
-Here is a interactive representation of the 3D object :
+
+Here is a interactive representation of the 3D object (not working at the moment) :
 
 {{< splat src="/gs_cleaned.splat" alt="Final result" height="500px" >}}
-
 
 
 
