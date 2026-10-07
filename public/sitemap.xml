@@ -4,18 +4,24 @@
 
   <url>
     <loc>http://localhost:1313/VARwebsite/</loc>
-    <lastmod>2026-10-02T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://localhost:1313/VARwebsite/posts/hci_3/</loc>
-    <lastmod>2026-10-02T00:00:00+00:00</lastmod>
+    <lastmod>2026-10-07T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://localhost:1313/VARwebsite/posts/</loc>
+    <lastmod>2026-10-07T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/VARwebsite/posts/setting-up/</loc>
+    <lastmod>2026-10-07T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/VARwebsite/posts/hci_3/</loc>
     <lastmod>2026-10-02T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

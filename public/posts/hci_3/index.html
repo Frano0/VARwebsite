@@ -58,9 +58,11 @@
 		<meta property="article:modified_time" content="2026-10-02T00:00:00+00:00">
 		<meta property="article:tag" content="Human-Computer Interface">
 		<meta property="article:tag" content="3D">
+		<meta property="og:image" content="http://localhost:1313/VARwebsite/posts/hci_3/featureGS.png">
 
   
-	<meta name="twitter:card" content="summary">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:image" content="http://localhost:1313/VARwebsite/posts/hci_3/featureGS.png">
 	<meta name="twitter:title" content="Gaussian Splatting">
 
   
@@ -242,7 +244,7 @@
     "keywords": ["Human-Computer Interface","3D"],
     
     "mainEntityOfPage": "http://localhost:1313/VARwebsite/posts/hci_3/",
-    "wordCount":  208 
+    "wordCount":  218 
   }]
   </script>
 
@@ -540,12 +542,6 @@
 
 
 
-  
-  
-    
-    
-  
-
 
 
 
@@ -571,7 +567,7 @@
     
     <img
       id="background-image"
-      src="/VARwebsite/background_hu_be8c8240e34ae799.png"
+      src="/VARwebsite/posts/hci_3/featureGS_hu_3aefb03cbee9aa54.png"
       role="presentation"
       loading="eager"
       decoding="async"
@@ -648,7 +644,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2026-10-02T00:00:00&#43;00:00">2 October 2026</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 min</span>
+      <time datetime="2026-10-02T00:00:00&#43;00:00">2 October 2026</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">2 mins</span>
     
 
     
@@ -852,13 +848,13 @@ Here we use a database of photos to create make this reconstruction. We use Colm
     </span>
     
 </h3>
-<p>To get our finished product, we use Supersplat to visualise the 3D object, as weell as remove any Gaussians that are not relevant to our</p>
+<p>To get our finished product, we use Supersplat to visualise the 3D object, as well as remove any Gaussians that are not relevant to the object we want to show.</p>
 <p><div style="text-align: center; width: 100%;">
   <img src="/VARwebsite/rendu_cleaned.png" alt="Final product" style="ZgotmplZ">
 </div>
 
 <em> Final result after removing the irrelevant gaussians on Supersplat</em></p>
-<p>Here is a interactive representation of the 3D object :</p>
+<p>Here is a interactive representation of the 3D object (not working at the moment) :</p>
 <div id="splat-viewer-4" style="width: 100%; height: 500px; border-radius: 8px; background-color: #000; position: relative; overflow: hidden;"></div>
 
 
@@ -1031,6 +1027,23 @@ Here we use a database of photos to create make this reconstruction. We use Colm
 
     </div>
     
+    
+      
+      
+      
+        
+      
+      
+        <div id="background-canvas" aria-hidden="true" class="pointer-events-none fixed inset-0 -z-20">
+          <img
+            src="/VARwebsite/background.jpg"
+            role="presentation"
+            loading="eager"
+            decoding="async"
+            class="nozoom h-full w-full object-cover" />
+          <div class="absolute inset-0 bg-neutral/75 dark:bg-neutral-800/60"></div>
+        </div>
+      
     
   </body>
   
