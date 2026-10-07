@@ -19,6 +19,7 @@ This new flexible sensor can be useful for a variety of HCI scenarios, such as w
 {{< image src="eggshell_sensor.png" alt="EMHFS" position="center" style="border-radius: 4px;" >}}
 <em> Schematics from the research article illustrating the inspiration </em>
 
+---
 
 ## The Ultimate Display, by Ivan Sutherland
 
@@ -32,6 +33,7 @@ His ultimate ambition is "a room within which the computer can control the exist
 {{< image src="ivan-sutherland-and-head-mounted-display.jpg" alt="Sutherland" position="center" style="border-radius: 4px;" >}}
 <em> Ivan Sutherland and his head mounted display </em>
 
+---
 
 ## Input Device failing
 

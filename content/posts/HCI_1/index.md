@@ -26,6 +26,7 @@ It would be difficult to solve this problem, but maybe it could be tackled by us
 {{< image src="MMN_wiki.png" alt="MMN" position="center" style="border-radius: 4px;" >}}
 <em> Example of a preview when hovering on Wikipédia </em>
 
+---
 
 ## Gestalt Laws
 
@@ -36,7 +37,7 @@ Gestalt Laws is useful when tidying your computer desktop ! You can arrange the 
 <em> A classic Windows desktop </em>
 
 
-
+---
 
 ## Dark Design Patterns
 
@@ -54,5 +55,4 @@ Many websites use cookies and want their user to accept them. To do this, they u
 
 {{< image src="cookies.png" alt="Cookies" position="center" style="border-radius: 4px; width: 10%;" >}}
 <em> Example of a cookie agreement pop-up </em>
-
 

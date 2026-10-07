@@ -9,17 +9,7 @@
     <managingEditor>francois.grastilleur@telecom-sudparis.eu (François Grastilleur)</managingEditor>
     <webMaster>francois.grastilleur@telecom-sudparis.eu (François Grastilleur)</webMaster>
     <copyright>© 2026 François Grastilleur</copyright>
-    <lastBuildDate>Wed, 07 Oct 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/VARwebsite/posts/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>Setting Up a Hugo Website with the Blowfish Theme</title>
-      <link>http://localhost:1313/VARwebsite/posts/setting-up/</link>
-      <pubDate>Wed, 07 Oct 2026 00:00:00 +0000</pubDate>
-      <author>francois.grastilleur@telecom-sudparis.eu (François Grastilleur)</author>
-      <guid>http://localhost:1313/VARwebsite/posts/setting-up/</guid>
-      <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/VARwebsite/posts/setting-up/feature_bf.png" />
-    </item>
+    <lastBuildDate>Fri, 02 Oct 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/VARwebsite/posts/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Gaussian Splatting</title>
@@ -49,6 +39,26 @@
       <guid>http://localhost:1313/VARwebsite/posts/hci_1/</guid>
       <description></description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/VARwebsite/posts/hci_1/featureHCI.jpg" />
+    </item>
+    
+    <item>
+      <title>Setting Up Unity</title>
+      <link>http://localhost:1313/VARwebsite/posts/unity-setup/</link>
+      <pubDate>Sat, 19 Sep 2026 00:00:00 +0000</pubDate>
+      <author>francois.grastilleur@telecom-sudparis.eu (François Grastilleur)</author>
+      <guid>http://localhost:1313/VARwebsite/posts/unity-setup/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/VARwebsite/posts/unity-setup/feature_unity.png" />
+    </item>
+    
+    <item>
+      <title>Setting Up a Hugo Website with the Blowfish Theme</title>
+      <link>http://localhost:1313/VARwebsite/posts/setting-up/</link>
+      <pubDate>Fri, 18 Sep 2026 00:00:00 +0000</pubDate>
+      <author>francois.grastilleur@telecom-sudparis.eu (François Grastilleur)</author>
+      <guid>http://localhost:1313/VARwebsite/posts/setting-up/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/VARwebsite/posts/setting-up/feature_bf.png" />
     </item>
     
   </channel>

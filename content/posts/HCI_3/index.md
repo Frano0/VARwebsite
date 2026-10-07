@@ -11,6 +11,8 @@ tags = ["Human-Computer Interface", "3D"]
 Gaussian splatting is a 3D digital reconstruction and rendering technique that uses millions of tiny, soft, overlapping 3D shapes called Gaussians to recreate real-world scenes with photorealistic detail and real-time viewing speeds.
 Here we use a database of photos to create make this reconstruction. We use Colmap, Brush and Supersplat to get the final result.
 
+---
+
 ### Colmap
 
 First, we load the image database into Colmap, to detect features on each of them, and reconstruct them together to get the relations between each images
@@ -18,6 +20,7 @@ First, we load the image database into Colmap, to detect features on each of the
 {{< image src="colmap.png" alt="Colmap" position="center" style="border-radius: 4px;" >}}
 <em> First visualisation of the object after detecting features and reconstructing </em>
 
+---
 
 ### Brush
 
@@ -30,6 +33,8 @@ After the training, we can see that there are a lot of artifacts created, which 
 
 {{< image src="rendu_brush.png" alt="Rendu Brush" position="center" style="border-radius: 4px;" >}}
 <em> Final result from Brush </em>
+
+---
 
 ### Supersplat
 
