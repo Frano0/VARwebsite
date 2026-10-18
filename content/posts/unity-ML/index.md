@@ -127,10 +127,10 @@ mlagents-learn config/rollerball_config.yaml --run-id=RollerBall
 
 Press the PLay button in the Unity Editor to watch the training process. Here are a video from the beginning of the training, where we see the agent struggling to reach the target, and an other from the end where it became very efficient and reaches multiple target per episodes.
 
-{{< localvideo src="/videos/debutTraining.mp4" >}}
+{{< localvideo src="debutTraining.mp4" >}}
 <em> Beginning of the training</em>
 
-{{< localvideo src="/videos/finTraining.mp4" >}}
+{{< localvideo src="finTraining.mp4" >}}
 <em> End of the training</em>
 
 

@@ -1,5 +1,9 @@
-<!-- layouts/shortcodes/localvideo.html -->
-<video width="100%" controls {{ if .Get "autoplay" }}autoplay muted loop playsinline{{ end }}>
-  <source src="{{ .Get "src" }}" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+{{ $video := .Page.Resources.GetMatch (.Get "src") }}
+{{ if $video }}
+  <video width="100%" controls {{ if .Get "autoplay" }}autoplay muted loop playsinline{{ end }}>
+    <source src="{{ $video.RelPermalink }}" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+{{ else }}
+  <p style="color: red;"><strong>Error:</strong> Video <code>{{ .Get "src" }}</code> not found in page bundle!</p>
+{{ end }}
