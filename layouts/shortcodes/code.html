@@ -1,0 +1,10 @@
+
+{{ $file := .Get "file" }}
+{{ $lang := .Get "lang" | default "csharp" }}
+
+{{ if fileExists $file }}
+  {{ $content := readFile $file }}
+  {{ highlight $content $lang "" }}
+{{ else }}
+  <p style="color: red;"><strong>Error:</strong> Code file not found at <code>{{ $file }}</code></p>
+{{ end }}
