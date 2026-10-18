@@ -9,6 +9,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>http://localhost:1313/VARwebsite/posts/unity-llm/</loc>
+    <lastmod>2026-10-18T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/VARwebsite/posts/unity-ml/</loc>
     <lastmod>2026-10-18T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>

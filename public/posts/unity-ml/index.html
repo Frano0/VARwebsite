@@ -793,6 +793,7 @@
     
 </h2>
 <p>In this post, we will learn how to implement a Machine Learning Agent in Unity. In order to do that, we will install the Unity ML-Agents Toolkit, that allows to train an agent to complete tasks. We will first follow the installation guide and check one of the built-in examples, and then create our own agent from scratch.</p>
+<hr>
 
 <h3 class="relative group">Setting up the ML-Agents Toolkit
     <div id="setting-up-the-ml-agents-toolkit" class="anchor"></div>
@@ -874,6 +875,7 @@
 </h4>
 <p>Finally, you need to install the Python side of the toolkit so your algorithms can communicate with Unity. Run this inside your Conda environment:</p>
 <div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">python -m pip install mlagents==1.1.0</span></span></code></pre></div></div>
+<hr>
 
 <h3 class="relative group">The 3D Ball example
     <div id="the-3d-ball-example" class="anchor"></div>
@@ -939,6 +941,7 @@
 <em> Screenshot of the terminal during training </em></p>
 <p>Once the training is complete, Unity automatically generates a <code> .onnx
 </code> neural network file. You can find it in the <code> /results </code> folder within the ML-Agents directory.</p>
+<hr>
 
 <h3 class="relative group">Making our own environment
     <div id="making-our-own-environment" class="anchor"></div>
@@ -1093,17 +1096,21 @@
 <div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">mlagents-learn config/rollerball_config.yaml --run-id=RollerBall</span></span></code></pre></div></div>
 <p>Press the PLay button in the Unity Editor to watch the training process. Here are a video from the beginning of the training, where we see the agent struggling to reach the target, and an other from the end where it became very efficient and reaches multiple target per episodes.</p>
 <p>
-<video width="100%" controls >
-  <source src="/videos/debutTraining.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+
+  <video width="100%" controls >
+    <source src="/VARwebsite/posts/unity-ml/debutTraining.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
 
 <em> Beginning of the training</em></p>
 <p>
-<video width="100%" controls >
-  <source src="/videos/finTraining.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+
+  <video width="100%" controls >
+    <source src="/VARwebsite/posts/unity-ml/finTraining.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
 
 <em> End of the training</em></p>
 
@@ -1148,6 +1155,19 @@
           
         </span>
         <span class="flex flex-col items-end">
+          
+            <a
+              class="flex text-right text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+              href="/VARwebsite/posts/unity-llm/">
+              <span class="leading-6">
+                Implementing a LLM Chatbot in Unity&ensp;<span class="inline-block rtl:rotate-180">&rarr;</span>
+              </span>
+            </a>
+            
+              <span class="me-6 mt-1 text-xs text-neutral-500 dark:text-neutral-400">
+                <time datetime="2026-10-18T00:00:00&#43;00:00">18 October 2026</time>
+              </span>
+            
           
         </span>
       </div>

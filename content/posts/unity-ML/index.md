@@ -9,6 +9,8 @@ tags = ['Unity', 'ML']
 
 In this post, we will learn how to implement a Machine Learning Agent in Unity. In order to do that, we will install the Unity ML-Agents Toolkit, that allows to train an agent to complete tasks. We will first follow the installation guide and check one of the built-in examples, and then create our own agent from scratch.
 
+---
+
 ### Setting up the ML-Agents Toolkit
 
 This part basicaly follows the guide of the [official Unity ML-Agents Toolkit manual](https://docs.unity3d.com/Packages/com.unity.ml-agents@4.0/manual/Installation.html). If any problem occurs, please refer to this page.
@@ -55,6 +57,7 @@ Finally, you need to install the Python side of the toolkit so your algorithms c
 python -m pip install mlagents==1.1.0
 ```
 
+---
 
 ### The 3D Ball example
 
@@ -95,6 +98,7 @@ mlagents-learn config/ppo/3DBall.yaml --run-id=first3DBallRun
 Once the training is complete, Unity automatically generates a <code> .onnx
 </code> neural network file. You can find it in the <code> /results </code> folder within the ML-Agents directory.
 
+---
 
 ### Making our own environment
 For our own environment, we will train a ball agent to go towards target objects that are generated randomly inside the training area.
