@@ -71,7 +71,7 @@ enableEmoji = true
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
-    
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.parser]

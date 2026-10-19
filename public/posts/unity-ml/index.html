@@ -95,6 +95,8 @@
   
   
   
+    
+  
   
     
   
@@ -238,7 +240,7 @@
     "keywords": ["Unity","ML"],
     
     "mainEntityOfPage": "http://localhost:1313/VARwebsite/posts/unity-ml/",
-    "wordCount":  1379 
+    "wordCount":  1373 
   }]
   </script>
 
@@ -776,26 +778,83 @@
       
       
       
+        <div class="order-first lg:ms-auto px-0 lg:order-last lg:ps-8 lg:max-w-2xs">
+          <div class="toc ps-5 print:hidden lg:sticky lg:top-[140px]">
+            <details
+  open
+  id="TOCView"
+  class="toc-right mt-0 overflow-y-auto overscroll-contain bf-scrollbar rounded-lg -ms-5 ps-5 pe-2 hidden lg:block">
+  <summary
+    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 -ms-5 ps-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="min-w-[220px] py-2 border-dotted border-s-1 -ms-5 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContents" aria-label="Table of Contents">
+  <ul>
+    <li><a href="#setting-up-the-ml-agents-toolkit">Setting up the ML-Agents Toolkit</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#1-creating-the-python-environment">1. Creating the Python Environment</a></li>
+        <li><a href="#2-installing-the-ml-agents-unity-package">2. Installing the ML-Agents Unity Package</a></li>
+        <li><a href="#3-installing-the-ml-agents-python-package">3. Installing the ML-Agents Python Package</a></li>
+      </ul>
+    </li>
+    <li><a href="#the-3d-ball-example">The 3D Ball example</a>
+      <ul>
+        <li><a href="#run-a-pre-trained-model">Run a pre-trained model</a></li>
+        <li><a href="#train-a-new-model-from-scratch">Train a new model from scratch</a></li>
+      </ul>
+    </li>
+    <li><a href="#making-our-own-environment">Making our own environment</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+<details class="toc-inside mt-0 overflow-hidden rounded-lg -ms-5 ps-5 lg:hidden">
+  <summary
+    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 -ms-5 ps-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="py-2 border-dotted border-neutral-300 border-s-1 -ms-5 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContentsMobile" aria-label="Table of Contents">
+  <ul>
+    <li><a href="#setting-up-the-ml-agents-toolkit">Setting up the ML-Agents Toolkit</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#1-creating-the-python-environment">1. Creating the Python Environment</a></li>
+        <li><a href="#2-installing-the-ml-agents-unity-package">2. Installing the ML-Agents Unity Package</a></li>
+        <li><a href="#3-installing-the-ml-agents-python-package">3. Installing the ML-Agents Python Package</a></li>
+      </ul>
+    </li>
+    <li><a href="#the-3d-ball-example">The 3D Ball example</a>
+      <ul>
+        <li><a href="#run-a-pre-trained-model">Run a pre-trained model</a></li>
+        <li><a href="#train-a-new-model-from-scratch">Train a new model from scratch</a></li>
+      </ul>
+    </li>
+    <li><a href="#making-our-own-environment">Making our own environment</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+
+
+          </div>
+        </div>
+      
 
 
       <div class="min-w-0 min-h-0 max-w-fit">
         
 
         <div class="article-content max-w-prose mb-20">
-          
-<h2 class="relative group">Implementing Machine Learning in Unity
-    <div id="implementing-machine-learning-in-unity" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#implementing-machine-learning-in-unity" aria-label="Anchor">#</a>
-    </span>
-    
-</h2>
-<p>In this post, we will learn how to implement a Machine Learning Agent in Unity. In order to do that, we will install the Unity ML-Agents Toolkit, that allows to train an agent to complete tasks. We will first follow the installation guide and check one of the built-in examples, and then create our own agent from scratch.</p>
+          <p>In this post, we will learn how to implement a Machine Learning Agent in Unity. In order to do that, we will install the Unity ML-Agents Toolkit, that allows to train an agent to complete tasks. We will first follow the installation guide and check one of the built-in examples, and then create our own agent from scratch.</p>
 <hr>
 
-<h3 class="relative group">Setting up the ML-Agents Toolkit
+<h2 class="relative group">Setting up the ML-Agents Toolkit
     <div id="setting-up-the-ml-agents-toolkit" class="anchor"></div>
     
     <span
@@ -803,10 +862,10 @@
         <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#setting-up-the-ml-agents-toolkit" aria-label="Anchor">#</a>
     </span>
     
-</h3>
+</h2>
 <p>This part basicaly follows the guide of the <a href="https://docs.unity3d.com/Packages/com.unity.ml-agents@4.0/manual/Installation.html"  target="_blank" rel="noreferrer">official Unity ML-Agents Toolkit manual</a>. If any problem occurs, please refer to this page.</p>
 
-<h4 class="relative group">Prerequisites
+<h3 class="relative group">Prerequisites
     <div id="prerequisites" class="anchor"></div>
     
     <span
@@ -814,18 +873,18 @@
         <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#prerequisites" aria-label="Anchor">#</a>
     </span>
     
-</h4>
+</h3>
 <p>Before installing the toolkit, ensure you have the correct foundation:</p>
 <ul>
 <li>
-<p>Unity Editor: You must be using Unity version 6000.0 or later. Use Unity Hub to manage your installation.</p>
+<p><strong>Unity Editor</strong>: You must be using Unity version 6000.0 or later. Use Unity Hub to manage your installation.</p>
 </li>
 <li>
-<p>Conda (or Mamba): You need a virtual environment manager to keep the ML-Agents Python dependencies isolated from the rest of your system.</p>
+<p><strong>Conda (or Mamba)</strong>: You need a virtual environment manager to keep the ML-Agents Python dependencies isolated from the rest of your system.</p>
 </li>
 </ul>
 
-<h4 class="relative group">1. Creating the Python Environment
+<h3 class="relative group">1. Creating the Python Environment
     <div id="1-creating-the-python-environment" class="anchor"></div>
     
     <span
@@ -833,13 +892,13 @@
         <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#1-creating-the-python-environment" aria-label="Anchor">#</a>
     </span>
     
-</h4>
-<p>Python 3.10.12 is prefered. In a terminal, use Conda to create a new virtual environment specifically running Python 3.10.12, then activate it:</p>
+</h3>
+<p><strong>Python 3.10.12</strong> is prefered. In a terminal, use Conda to create a new virtual environment specifically running Python 3.10.12, then activate it:</p>
 <div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">conda create -n mlagents python=3.10.12 &amp;&amp; conda activate mlagents</span></span></code></pre></div></div>
 <p>If you are on Windows, you will need to install PyTorch separately at this stage to ensure proper CUDA support for your GPU).</p>
 <div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">pip3 install torch~=2.2.1 --index-url https://download.pytorch.org/whl/cu121</span></span></code></pre></div></div>
 
-<h4 class="relative group">2. Installing the ML-Agents Unity Package
+<h3 class="relative group">2. Installing the ML-Agents Unity Package
     <div id="2-installing-the-ml-agents-unity-package" class="anchor"></div>
     
     <span
@@ -847,7 +906,7 @@
         <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#2-installing-the-ml-agents-unity-package" aria-label="Anchor">#</a>
     </span>
     
-</h4>
+</h3>
 <p>Next, we need to add the toolkit to your Unity project. This is done via the Unity Editor:</p>
 <ol>
 <li>
@@ -864,7 +923,7 @@
 </li>
 </ol>
 
-<h4 class="relative group">3. Installing the ML-Agents Python Package
+<h3 class="relative group">3. Installing the ML-Agents Python Package
     <div id="3-installing-the-ml-agents-python-package" class="anchor"></div>
     
     <span
@@ -872,12 +931,12 @@
         <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#3-installing-the-ml-agents-python-package" aria-label="Anchor">#</a>
     </span>
     
-</h4>
+</h3>
 <p>Finally, you need to install the Python side of the toolkit so your algorithms can communicate with Unity. Run this inside your Conda environment:</p>
 <div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">python -m pip install mlagents==1.1.0</span></span></code></pre></div></div>
 <hr>
 
-<h3 class="relative group">The 3D Ball example
+<h2 class="relative group">The 3D Ball example
     <div id="the-3d-ball-example" class="anchor"></div>
     
     <span
@@ -885,7 +944,7 @@
         <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#the-3d-ball-example" aria-label="Anchor">#</a>
     </span>
     
-</h3>
+</h2>
 <p><div style="text-align: center; width: 100%;">
   <img src="/VARwebsite/posts/unity-ml/featured_UnityML.png" alt="UnityML" style="ZgotmplZ">
 </div>
@@ -894,7 +953,7 @@
 <p>One of the examples Unity provides when installing ML-Agents is the 3D Ball environment, which contains several agent cubes and balls. In this environment, an agent cube is an Agent that receives a reward for every step that it balances the ball. An agent is also penalized with a negative reward for dropping the ball. The goal of the training process is to have the agents learn to balance the ball on their head. Now, we will quickly follow the steps from <a href="https://docs.unity3d.com/Packages/com.unity.ml-agents@4.0/manual/Sample.html"  target="_blank" rel="noreferrer">this page</a>.</p>
 <p>First, make sure you open the ML-Agents project that was setup earlier. In the Project window, you should now have access to <code> Assets/ML-Agents/Examples/3DBall/Scenes</code>, where you find the 3DBallscene file. Open it.</p>
 
-<h4 class="relative group">Run a pre-trained model
+<h3 class="relative group">Run a pre-trained model
     <div id="run-a-pre-trained-model" class="anchor"></div>
     
     <span
@@ -902,7 +961,7 @@
         <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#run-a-pre-trained-model" aria-label="Anchor">#</a>
     </span>
     
-</h4>
+</h3>
 <p>Let&rsquo;s run a model that Unity has already trained for us.</p>
 <ol>
 <li>In your Hierarchy, you will see several platforms (they are all identical clones to speed up training). Select the main 3DBall prefab so we can edit them all at once.</li>
@@ -913,7 +972,7 @@
 <li>Press Play at the top of the Unity Editor and see the model in action !</li>
 </ol>
 
-<h4 class="relative group">Train a new model from scratch
+<h3 class="relative group">Train a new model from scratch
     <div id="train-a-new-model-from-scratch" class="anchor"></div>
     
     <span
@@ -921,7 +980,7 @@
         <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#train-a-new-model-from-scratch" aria-label="Anchor">#</a>
     </span>
     
-</h4>
+</h3>
 <p>Now let&rsquo;s try to train our own 3DBall model.</p>
 <ol>
 <li>Make sure you are using the Conda environment we created in the setup guide :</li>
@@ -943,7 +1002,7 @@
 </code> neural network file. You can find it in the <code> /results </code> folder within the ML-Agents directory.</p>
 <hr>
 
-<h3 class="relative group">Making our own environment
+<h2 class="relative group">Making our own environment
     <div id="making-our-own-environment" class="anchor"></div>
     
     <span
@@ -951,7 +1010,7 @@
         <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#making-our-own-environment" aria-label="Anchor">#</a>
     </span>
     
-</h3>
+</h2>
 <p>For our own environment, we will train a ball agent to go towards target objects that are generated randomly inside the training area.</p>
 <p>First let&rsquo;s create the scene. In a new project (or a new Scene in the ML-Agents project), add a Plane for the ground, Walls if you want boundaries, a Sphere object that will be our agent, and a target object (a red square in my case). Your Scene should look like the following :</p>
 <div style="text-align: center; width: 100%;">
@@ -1144,7 +1203,7 @@
               class="flex text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
               href="/VARwebsite/posts/hci_3/">
               <span class="leading-6">
-                <span class="inline-block rtl:rotate-180">&larr;</span>&ensp;Gaussian Splatting
+                <span class="inline-block rtl:rotate-180">&larr;</span>&ensp;Creating a Gaussian Splatting
               </span>
             </a>
             

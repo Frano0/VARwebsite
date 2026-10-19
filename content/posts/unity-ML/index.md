@@ -5,28 +5,28 @@ draft = "false"
 tags = ['Unity', 'ML']
 +++
 
-## Implementing Machine Learning in Unity
 
 In this post, we will learn how to implement a Machine Learning Agent in Unity. In order to do that, we will install the Unity ML-Agents Toolkit, that allows to train an agent to complete tasks. We will first follow the installation guide and check one of the built-in examples, and then create our own agent from scratch.
 
+
 ---
 
-### Setting up the ML-Agents Toolkit
+## Setting up the ML-Agents Toolkit
 
 This part basicaly follows the guide of the [official Unity ML-Agents Toolkit manual](https://docs.unity3d.com/Packages/com.unity.ml-agents@4.0/manual/Installation.html). If any problem occurs, please refer to this page.
 
 
-#### Prerequisites
+### Prerequisites
 
 Before installing the toolkit, ensure you have the correct foundation:
 
-- Unity Editor: You must be using Unity version 6000.0 or later. Use Unity Hub to manage your installation.
+- **Unity Editor**: You must be using Unity version 6000.0 or later. Use Unity Hub to manage your installation.
 
-- Conda (or Mamba): You need a virtual environment manager to keep the ML-Agents Python dependencies isolated from the rest of your system.
+- **Conda (or Mamba)**: You need a virtual environment manager to keep the ML-Agents Python dependencies isolated from the rest of your system.
 
-#### 1. Creating the Python Environment
+### 1. Creating the Python Environment
 
-Python 3.10.12 is prefered. In a terminal, use Conda to create a new virtual environment specifically running Python 3.10.12, then activate it:
+**Python 3.10.12** is prefered. In a terminal, use Conda to create a new virtual environment specifically running Python 3.10.12, then activate it:
 
 ```
 conda create -n mlagents python=3.10.12 && conda activate mlagents
@@ -38,7 +38,7 @@ If you are on Windows, you will need to install PyTorch separately at this stage
 pip3 install torch~=2.2.1 --index-url https://download.pytorch.org/whl/cu121
 ```
 
-#### 2. Installing the ML-Agents Unity Package
+### 2. Installing the ML-Agents Unity Package
 
 Next, we need to add the toolkit to your Unity project. This is done via the Unity Editor:
 
@@ -50,7 +50,7 @@ Next, we need to add the toolkit to your Unity project. This is done via the Uni
 
 4. Type <code>com.unity.ml-agents </code> and install it.
 
-#### 3. Installing the ML-Agents Python Package
+### 3. Installing the ML-Agents Python Package
 Finally, you need to install the Python side of the toolkit so your algorithms can communicate with Unity. Run this inside your Conda environment:
 
 ```
@@ -59,7 +59,7 @@ python -m pip install mlagents==1.1.0
 
 ---
 
-### The 3D Ball example
+## The 3D Ball example
 
 {{< image src="featured_UnityML.png" alt="UnityML" position="center" style="border-radius: 4px;" >}}
 <em> The 3DBall example in training </em>
@@ -68,7 +68,7 @@ One of the examples Unity provides when installing ML-Agents is the 3D Ball envi
 
 First, make sure you open the ML-Agents project that was setup earlier. In the Project window, you should now have access to <code> Assets/ML-Agents/Examples/3DBall/Scenes</code>, where you find the 3DBallscene file. Open it.
 
-#### Run a pre-trained model
+### Run a pre-trained model
 Let's run a model that Unity has already trained for us.
 
 1. In your Hierarchy, you will see several platforms (they are all identical clones to speed up training). Select the main 3DBall prefab so we can edit them all at once.
@@ -79,7 +79,7 @@ Let's run a model that Unity has already trained for us.
 6. Press Play at the top of the Unity Editor and see the model in action !
 
 
-#### Train a new model from scratch
+### Train a new model from scratch
 Now let's try to train our own 3DBall model.
 
 1. Make sure you are using the Conda environment we created in the setup guide :
@@ -100,7 +100,7 @@ Once the training is complete, Unity automatically generates a <code> .onnx
 
 ---
 
-### Making our own environment
+## Making our own environment
 For our own environment, we will train a ball agent to go towards target objects that are generated randomly inside the training area.
 
 First let's create the scene. In a new project (or a new Scene in the ML-Agents project), add a Plane for the ground, Walls if you want boundaries, a Sphere object that will be our agent, and a target object (a red square in my case). Your Scene should look like the following :

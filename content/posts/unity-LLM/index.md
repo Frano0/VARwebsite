@@ -5,12 +5,11 @@ draft = "false"
 tags = ['Unity', 'LLM']
 +++
 
-## Building a Talking LLM Character in Unity
 
 In this tutorial, we will look at how to build an in-engine chat interface where an NPC responds **locally on your machine** using [LLMUnity](https://github.com/undreamai/LLMUnity).
 
 
-### Architecture Overview
+## Architecture Overview
 
 The system architecture consists of four distinct components working together:
 
@@ -19,7 +18,7 @@ The system architecture consists of four distinct components working together:
 3. **`NPCController.cs` (The Glue):** A custom C# script handling UI events, locking input while the character speaks, and updating the text stream.
 4. **`ChatScrollView` (The Face / UI):** A responsive TextMeshPro Scroll View that dynamically displays the conversation and scrolls automatically.
 
-### Step 1: Install LLMUnity & Setup the Model Server
+## Step 1: Install LLMUnity & Setup the Model Server
 
 {{< image src="LLMgit.png" alt="Screenshot from the LLM for Unity Github" position="center" style="border-radius: 4px;" >}}
 
@@ -36,7 +35,7 @@ The system architecture consists of four distinct components working together:
    
 
 
-### Step 2: Create the AI Character
+## Step 2: Create the AI Character
 
 1. Right-click in the Hierarchy and create another Empty GameObject named `AI Character`.
 2. Add the **LLMAgent** component to it.
@@ -49,7 +48,7 @@ Respond naturally and briefly (1-3 sentences), as if having a real-time spoken c
 Do not use emojis.
 ```
 
-### Step 3: Build the Chat UI
+## Step 3: Build the Chat UI
 
 The UI Canvas hierachy should look something like this :
 ```
@@ -81,13 +80,13 @@ Here is how it looked for me :
 {{< image src="LLMscreen.png" alt="LLM UI Screenshot" position="center" style="border-radius: 4px;" >}}
 
 
-### Step 4: Create the Controller Script
+## Step 4: Create the Controller Script
 
 Create a new C# script named <code>NPCController.cs</code> in your Assets/Scripts/ folder and paste the following code:
 
 {{< code file="assets/code/NPCController.cs" >}}
 
-### Step 5: Assign Component References
+## Step 5: Assign Component References
 1. Select the AI Character GameObject
 2. Add the NPCController component to it.
 3. Link the inferences in the Inspector:
@@ -97,7 +96,7 @@ Create a new C# script named <code>NPCController.cs</code> in your Assets/Script
 	- Send Button: Drag Button_Send.
 	- Scroll Rect: Drag ChatScrollView.
 
-### Step 6: Try it out !
+## Step 6: Try it out !
 Press Play in the Unity Editor, click into the input field, and send a message.
 Here is a video demonstrating the final results.
 

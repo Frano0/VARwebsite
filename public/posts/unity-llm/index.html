@@ -95,6 +95,8 @@
   
   
   
+    
+  
   
     
   
@@ -238,7 +240,7 @@
     "keywords": ["Unity","LLM"],
     
     "mainEntityOfPage": "http://localhost:1313/VARwebsite/posts/unity-llm/",
-    "wordCount":  767 
+    "wordCount":  759 
   }]
   </script>
 
@@ -776,25 +778,66 @@
       
       
       
+        <div class="order-first lg:ms-auto px-0 lg:order-last lg:ps-8 lg:max-w-2xs">
+          <div class="toc ps-5 print:hidden lg:sticky lg:top-[140px]">
+            <details
+  open
+  id="TOCView"
+  class="toc-right mt-0 overflow-y-auto overscroll-contain bf-scrollbar rounded-lg -ms-5 ps-5 pe-2 hidden lg:block">
+  <summary
+    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 -ms-5 ps-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="min-w-[220px] py-2 border-dotted border-s-1 -ms-5 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContents" aria-label="Table of Contents">
+  <ul>
+    <li><a href="#architecture-overview">Architecture Overview</a></li>
+    <li><a href="#step-1-install-llmunity--setup-the-model-server">Step 1: Install LLMUnity &amp; Setup the Model Server</a></li>
+    <li><a href="#step-2-create-the-ai-character">Step 2: Create the AI Character</a></li>
+    <li><a href="#step-3-build-the-chat-ui">Step 3: Build the Chat UI</a></li>
+    <li><a href="#step-4-create-the-controller-script">Step 4: Create the Controller Script</a></li>
+    <li><a href="#step-5-assign-component-references">Step 5: Assign Component References</a></li>
+    <li><a href="#step-6-try-it-out-">Step 6: Try it out !</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+<details class="toc-inside mt-0 overflow-hidden rounded-lg -ms-5 ps-5 lg:hidden">
+  <summary
+    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 -ms-5 ps-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="py-2 border-dotted border-neutral-300 border-s-1 -ms-5 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContentsMobile" aria-label="Table of Contents">
+  <ul>
+    <li><a href="#architecture-overview">Architecture Overview</a></li>
+    <li><a href="#step-1-install-llmunity--setup-the-model-server">Step 1: Install LLMUnity &amp; Setup the Model Server</a></li>
+    <li><a href="#step-2-create-the-ai-character">Step 2: Create the AI Character</a></li>
+    <li><a href="#step-3-build-the-chat-ui">Step 3: Build the Chat UI</a></li>
+    <li><a href="#step-4-create-the-controller-script">Step 4: Create the Controller Script</a></li>
+    <li><a href="#step-5-assign-component-references">Step 5: Assign Component References</a></li>
+    <li><a href="#step-6-try-it-out-">Step 6: Try it out !</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+
+
+          </div>
+        </div>
+      
 
 
       <div class="min-w-0 min-h-0 max-w-fit">
         
 
         <div class="article-content max-w-prose mb-20">
-          
-<h2 class="relative group">Building a Talking LLM Character in Unity
-    <div id="building-a-talking-llm-character-in-unity" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#building-a-talking-llm-character-in-unity" aria-label="Anchor">#</a>
-    </span>
-    
-</h2>
-<p>In this tutorial, we will look at how to build an in-engine chat interface where an NPC responds <strong>locally on your machine</strong> using <a href="https://github.com/undreamai/LLMUnity"  target="_blank" rel="noreferrer">LLMUnity</a>.</p>
+          <p>In this tutorial, we will look at how to build an in-engine chat interface where an NPC responds <strong>locally on your machine</strong> using <a href="https://github.com/undreamai/LLMUnity"  target="_blank" rel="noreferrer">LLMUnity</a>.</p>
 
-<h3 class="relative group">Architecture Overview
+<h2 class="relative group">Architecture Overview
     <div id="architecture-overview" class="anchor"></div>
     
     <span
@@ -802,7 +845,7 @@
         <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#architecture-overview" aria-label="Anchor">#</a>
     </span>
     
-</h3>
+</h2>
 <p>The system architecture consists of four distinct components working together:</p>
 <ol>
 <li><strong><code>LLM_GameObject</code> (The Brain):</strong> A GameObject with the <code>LLM</code> script that loads the local <code>.gguf</code> weights and runs inference in the background.</li>
@@ -811,7 +854,7 @@
 <li><strong><code>ChatScrollView</code> (The Face / UI):</strong> A responsive TextMeshPro Scroll View that dynamically displays the conversation and scrolls automatically.</li>
 </ol>
 
-<h3 class="relative group">Step 1: Install LLMUnity &amp; Setup the Model Server
+<h2 class="relative group">Step 1: Install LLMUnity &amp; Setup the Model Server
     <div id="step-1-install-llmunity--setup-the-model-server" class="anchor"></div>
     
     <span
@@ -819,7 +862,7 @@
         <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#step-1-install-llmunity--setup-the-model-server" aria-label="Anchor">#</a>
     </span>
     
-</h3>
+</h2>
 <div style="text-align: center; width: 100%;">
   <img src="/VARwebsite/LLMgit.png" alt="Screenshot from the LLM for Unity Github" style="ZgotmplZ">
 </div>
@@ -840,7 +883,7 @@
 </li>
 </ol>
 
-<h3 class="relative group">Step 2: Create the AI Character
+<h2 class="relative group">Step 2: Create the AI Character
     <div id="step-2-create-the-ai-character" class="anchor"></div>
     
     <span
@@ -848,7 +891,7 @@
         <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#step-2-create-the-ai-character" aria-label="Anchor">#</a>
     </span>
     
-</h3>
+</h2>
 <ol>
 <li>Right-click in the Hierarchy and create another Empty GameObject named <code>AI Character</code>.</li>
 <li>Add the <strong>LLMAgent</strong> component to it.</li>
@@ -859,7 +902,7 @@
 </span></span><span class="line"><span class="cl">Respond naturally and briefly (1-3 sentences), as if having a real-time spoken conversation with a user testing your interface.
 </span></span><span class="line"><span class="cl">Do not use emojis.</span></span></code></pre></div></div>
 
-<h3 class="relative group">Step 3: Build the Chat UI
+<h2 class="relative group">Step 3: Build the Chat UI
     <div id="step-3-build-the-chat-ui" class="anchor"></div>
     
     <span
@@ -867,7 +910,7 @@
         <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#step-3-build-the-chat-ui" aria-label="Anchor">#</a>
     </span>
     
-</h3>
+</h2>
 <p>The UI Canvas hierachy should look something like this :</p>
 <div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">Canvas
 </span></span><span class="line"><span class="cl">├── ChatScrollView (Scroll View)
@@ -905,7 +948,7 @@
 </div>
 
 
-<h3 class="relative group">Step 4: Create the Controller Script
+<h2 class="relative group">Step 4: Create the Controller Script
     <div id="step-4-create-the-controller-script" class="anchor"></div>
     
     <span
@@ -913,7 +956,7 @@
         <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#step-4-create-the-controller-script" aria-label="Anchor">#</a>
     </span>
     
-</h3>
+</h2>
 <p>Create a new C# script named <code>NPCController.cs</code> in your Assets/Scripts/ folder and paste the following code:</p>
 
 
@@ -980,7 +1023,7 @@
 
 
 
-<h3 class="relative group">Step 5: Assign Component References
+<h2 class="relative group">Step 5: Assign Component References
     <div id="step-5-assign-component-references" class="anchor"></div>
     
     <span
@@ -988,7 +1031,7 @@
         <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#step-5-assign-component-references" aria-label="Anchor">#</a>
     </span>
     
-</h3>
+</h2>
 <ol>
 <li>Select the AI Character GameObject</li>
 <li>Add the NPCController component to it.</li>
@@ -1003,7 +1046,7 @@
 </li>
 </ol>
 
-<h3 class="relative group">Step 6: Try it out !
+<h2 class="relative group">Step 6: Try it out !
     <div id="step-6-try-it-out-" class="anchor"></div>
     
     <span
@@ -1011,7 +1054,7 @@
         <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#step-6-try-it-out-" aria-label="Anchor">#</a>
     </span>
     
-</h3>
+</h2>
 <p>Press Play in the Unity Editor, click into the input field, and send a message.
 Here is a video demonstrating the final results.</p>
 <p>
@@ -1066,6 +1109,19 @@ Here is a video demonstrating the final results.</p>
           
         </span>
         <span class="flex flex-col items-end">
+          
+            <a
+              class="flex text-right text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+              href="/VARwebsite/posts/unity-gs/">
+              <span class="leading-6">
+                Importing a Gaussian Splatting in Unity&ensp;<span class="inline-block rtl:rotate-180">&rarr;</span>
+              </span>
+            </a>
+            
+              <span class="me-6 mt-1 text-xs text-neutral-500 dark:text-neutral-400">
+                <time datetime="2026-10-19T00:00:00&#43;00:00">19 October 2026</time>
+              </span>
+            
           
         </span>
       </div>

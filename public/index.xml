@@ -9,7 +9,17 @@
     <managingEditor>francois.grastilleur@telecom-sudparis.eu (François Grastilleur)</managingEditor>
     <webMaster>francois.grastilleur@telecom-sudparis.eu (François Grastilleur)</webMaster>
     <copyright>© 2026 François Grastilleur</copyright>
-    <lastBuildDate>Sun, 18 Oct 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/VARwebsite/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 19 Oct 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/VARwebsite/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Importing a Gaussian Splatting in Unity</title>
+      <link>http://localhost:1313/VARwebsite/posts/unity-gs/</link>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate>
+      <author>francois.grastilleur@telecom-sudparis.eu (François Grastilleur)</author>
+      <guid>http://localhost:1313/VARwebsite/posts/unity-gs/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/VARwebsite/posts/unity-gs/featured_GSUnity.png" />
+    </item>
     
     <item>
       <title>Implementing a LLM Chatbot in Unity</title>
@@ -32,7 +42,7 @@
     </item>
     
     <item>
-      <title>Gaussian Splatting</title>
+      <title>Creating a Gaussian Splatting</title>
       <link>http://localhost:1313/VARwebsite/posts/hci_3/</link>
       <pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
       <author>francois.grastilleur@telecom-sudparis.eu (François Grastilleur)</author>

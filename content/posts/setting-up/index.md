@@ -4,7 +4,6 @@ date = "2026-09-18"
 draft = "false"
 +++
 
-## Setting Up a Hugo Website with the Blowfish Theme
 
 Hugo is a simple and easy-to-use tool for building static website. This website was built using Hugo, implementing the **Blowfish** theme. It is hosted with GitHub Pages
 
@@ -12,7 +11,7 @@ Here, I’ll walk you through setting up a brand-new Hugo project from scratch, 
 
 This walk-through is basically following the [Hugo quickstart guide](https://gohugo.io/getting-started/quick-start/), the [Blowfish installation guide](https://blowfish.page/docs/installation/) and the [Blowfish hosting guide](https://blowfish.page/docs/hosting-deployment/).
 
-### Prerequisites
+## Prerequisites
 
 Before we dive in, make sure you have the following ready to go:
 
@@ -22,7 +21,7 @@ Before we dive in, make sure you have the following ready to go:
 
 * A terminal (I made this website on Linux).*
 
-### Step 1: Create Your Project Skeleton
+## Step 1: Create Your Project Skeleton
 
 First, open your terminal and run the following commands to generate your project folder and initialize it:
 
@@ -38,7 +37,7 @@ git init
 
 ```
 
-### Step 2: Install the Blowfish Theme Manually
+## Step 2: Install the Blowfish Theme Manually
 
 There are many ways to install Blowfish. I decided to do it manually
 
@@ -50,7 +49,7 @@ There are many ways to install Blowfish. I decided to do it manually
 
 4. Move this folder into the `themes/` directory inside your Hugo project's root folder.
 
-### Step 3: Configure the Theme
+## Step 3: Configure the Theme
 
 Blowfish uses a structured configuration folder rather than a single file. Here is how to set it up:
 
@@ -88,7 +87,7 @@ title = 'My Awesome Blowfish Site'
 
 ```
 
-### Step 4: Create Your First Post
+## Step 4: Create Your First Post
 
 In the particular case of making a blog, creating posts is easy thanks to Hugo. You can do it by using the following command:  
 
@@ -112,7 +111,7 @@ This is **bold** text, and this is *emphasized* text. Welcome to my new blog!
 ```
 
 
-### Step 5: Preview Your Website
+## Step 5: Preview Your Website
 
 To see what your website looks like as you edit, start Hugo's local development server. Because our post is still a draft, we need to append the `-D` flag to tell Hugo to render draft content:
 
@@ -123,7 +122,7 @@ hugo server -D
 
 Open the localhost URL provided in your terminal in your web browser. You can keep this server running in the background—it will automatically refresh the page whenever you save changes to your files!
 
-### Step 6: Host the Website on GitHub Pages
+## Step 6: Host the Website on GitHub Pages
 
 This website is also hosted on GitHub Pages. Let's see how to do this.
 

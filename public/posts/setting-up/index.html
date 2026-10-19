@@ -97,6 +97,8 @@
   
   
   
+    
+  
   
     
   
@@ -240,7 +242,7 @@
     
     
     "mainEntityOfPage": "http://localhost:1313/VARwebsite/posts/setting-up/",
-    "wordCount":  785 
+    "wordCount":  775 
   }]
   </script>
 
@@ -738,27 +740,68 @@
       
       
       
+        <div class="order-first lg:ms-auto px-0 lg:order-last lg:ps-8 lg:max-w-2xs">
+          <div class="toc ps-5 print:hidden lg:sticky lg:top-[140px]">
+            <details
+  open
+  id="TOCView"
+  class="toc-right mt-0 overflow-y-auto overscroll-contain bf-scrollbar rounded-lg -ms-5 ps-5 pe-2 hidden lg:block">
+  <summary
+    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 -ms-5 ps-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="min-w-[220px] py-2 border-dotted border-s-1 -ms-5 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContents" aria-label="Table of Contents">
+  <ul>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#step-1-create-your-project-skeleton">Step 1: Create Your Project Skeleton</a></li>
+    <li><a href="#step-2-install-the-blowfish-theme-manually">Step 2: Install the Blowfish Theme Manually</a></li>
+    <li><a href="#step-3-configure-the-theme">Step 3: Configure the Theme</a></li>
+    <li><a href="#step-4-create-your-first-post">Step 4: Create Your First Post</a></li>
+    <li><a href="#step-5-preview-your-website">Step 5: Preview Your Website</a></li>
+    <li><a href="#step-6-host-the-website-on-github-pages">Step 6: Host the Website on GitHub Pages</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+<details class="toc-inside mt-0 overflow-hidden rounded-lg -ms-5 ps-5 lg:hidden">
+  <summary
+    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 -ms-5 ps-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="py-2 border-dotted border-neutral-300 border-s-1 -ms-5 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContentsMobile" aria-label="Table of Contents">
+  <ul>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#step-1-create-your-project-skeleton">Step 1: Create Your Project Skeleton</a></li>
+    <li><a href="#step-2-install-the-blowfish-theme-manually">Step 2: Install the Blowfish Theme Manually</a></li>
+    <li><a href="#step-3-configure-the-theme">Step 3: Configure the Theme</a></li>
+    <li><a href="#step-4-create-your-first-post">Step 4: Create Your First Post</a></li>
+    <li><a href="#step-5-preview-your-website">Step 5: Preview Your Website</a></li>
+    <li><a href="#step-6-host-the-website-on-github-pages">Step 6: Host the Website on GitHub Pages</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+
+
+          </div>
+        </div>
+      
 
 
       <div class="min-w-0 min-h-0 max-w-fit">
         
 
         <div class="article-content max-w-prose mb-20">
-          
-<h2 class="relative group">Setting Up a Hugo Website with the Blowfish Theme
-    <div id="setting-up-a-hugo-website-with-the-blowfish-theme" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#setting-up-a-hugo-website-with-the-blowfish-theme" aria-label="Anchor">#</a>
-    </span>
-    
-</h2>
-<p>Hugo is a simple and easy-to-use tool for building static website. This website was built using Hugo, implementing the <strong>Blowfish</strong> theme. It is hosted with GitHub Pages</p>
+          <p>Hugo is a simple and easy-to-use tool for building static website. This website was built using Hugo, implementing the <strong>Blowfish</strong> theme. It is hosted with GitHub Pages</p>
 <p>Here, I’ll walk you through setting up a brand-new Hugo project from scratch, manually installing the Blowfish theme, adding your first piece of content, building and hosting the final site.</p>
 <p>This walk-through is basically following the <a href="https://gohugo.io/getting-started/quick-start/"  target="_blank" rel="noreferrer">Hugo quickstart guide</a>, the <a href="https://blowfish.page/docs/installation/"  target="_blank" rel="noreferrer">Blowfish installation guide</a> and the <a href="https://blowfish.page/docs/hosting-deployment/"  target="_blank" rel="noreferrer">Blowfish hosting guide</a>.</p>
 
-<h3 class="relative group">Prerequisites
+<h2 class="relative group">Prerequisites
     <div id="prerequisites" class="anchor"></div>
     
     <span
@@ -766,7 +809,7 @@
         <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#prerequisites" aria-label="Anchor">#</a>
     </span>
     
-</h3>
+</h2>
 <p>Before we dive in, make sure you have the following ready to go:</p>
 <ul>
 <li>
@@ -780,7 +823,7 @@
 </li>
 </ul>
 
-<h3 class="relative group">Step 1: Create Your Project Skeleton
+<h2 class="relative group">Step 1: Create Your Project Skeleton
     <div id="step-1-create-your-project-skeleton" class="anchor"></div>
     
     <span
@@ -788,7 +831,7 @@
         <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#step-1-create-your-project-skeleton" aria-label="Anchor">#</a>
     </span>
     
-</h3>
+</h2>
 <p>First, open your terminal and run the following commands to generate your project folder and initialize it:</p>
 <div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl"># Create a new project called &#39;my-website&#39;
 </span></span><span class="line"><span class="cl">hugo new project my-website
@@ -799,7 +842,7 @@
 </span></span><span class="line"><span class="cl"># Initialize an empty Git repository
 </span></span><span class="line"><span class="cl">git init</span></span></code></pre></div></div>
 
-<h3 class="relative group">Step 2: Install the Blowfish Theme Manually
+<h2 class="relative group">Step 2: Install the Blowfish Theme Manually
     <div id="step-2-install-the-blowfish-theme-manually" class="anchor"></div>
     
     <span
@@ -807,7 +850,7 @@
         <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#step-2-install-the-blowfish-theme-manually" aria-label="Anchor">#</a>
     </span>
     
-</h3>
+</h2>
 <p>There are many ways to install Blowfish. I decided to do it manually</p>
 <ol>
 <li>
@@ -824,7 +867,7 @@
 </li>
 </ol>
 
-<h3 class="relative group">Step 3: Configure the Theme
+<h2 class="relative group">Step 3: Configure the Theme
     <div id="step-3-configure-the-theme" class="anchor"></div>
     
     <span
@@ -832,7 +875,7 @@
         <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#step-3-configure-the-theme" aria-label="Anchor">#</a>
     </span>
     
-</h3>
+</h2>
 <p>Blowfish uses a structured configuration folder rather than a single file. Here is how to set it up:</p>
 <ol>
 <li>
@@ -859,7 +902,7 @@
 </span></span><span class="line"><span class="cl">locale = &#39;en-us&#39;
 </span></span><span class="line"><span class="cl">title = &#39;My Awesome Blowfish Site&#39;</span></span></code></pre></div></div>
 
-<h3 class="relative group">Step 4: Create Your First Post
+<h2 class="relative group">Step 4: Create Your First Post
     <div id="step-4-create-your-first-post" class="anchor"></div>
     
     <span
@@ -867,7 +910,7 @@
         <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#step-4-create-your-first-post" aria-label="Anchor">#</a>
     </span>
     
-</h3>
+</h2>
 <p>In the particular case of making a blog, creating posts is easy thanks to Hugo. You can do it by using the following command:</p>
 <div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">hugo new content content/posts/my-first-post.md</span></span></code></pre></div></div>
 <p>Hugo will create the file and automatically populate it with some &ldquo;front matter&rdquo; (the metadata at the top). Open it in your favorite text editor, and it will look something like this:</p>
@@ -880,7 +923,7 @@
 </span></span><span class="line"><span class="cl">## Introduction
 </span></span><span class="line"><span class="cl">This is **bold** text, and this is *emphasized* text. Welcome to my new blog!</span></span></code></pre></div></div>
 
-<h3 class="relative group">Step 5: Preview Your Website
+<h2 class="relative group">Step 5: Preview Your Website
     <div id="step-5-preview-your-website" class="anchor"></div>
     
     <span
@@ -888,12 +931,12 @@
         <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#step-5-preview-your-website" aria-label="Anchor">#</a>
     </span>
     
-</h3>
+</h2>
 <p>To see what your website looks like as you edit, start Hugo&rsquo;s local development server. Because our post is still a draft, we need to append the <code>-D</code> flag to tell Hugo to render draft content:</p>
 <div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">hugo server -D</span></span></code></pre></div></div>
 <p>Open the localhost URL provided in your terminal in your web browser. You can keep this server running in the background—it will automatically refresh the page whenever you save changes to your files!</p>
 
-<h3 class="relative group">Step 6: Host the Website on GitHub Pages
+<h2 class="relative group">Step 6: Host the Website on GitHub Pages
     <div id="step-6-host-the-website-on-github-pages" class="anchor"></div>
     
     <span
@@ -901,7 +944,7 @@
         <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#step-6-host-the-website-on-github-pages" aria-label="Anchor">#</a>
     </span>
     
-</h3>
+</h2>
 <p>This website is also hosted on GitHub Pages. Let&rsquo;s see how to do this.</p>
 <p>First, make sure your Hugo project is pushed to a repository on GitHub. Once it&rsquo;s there, we need to create an Actions workflow to automatically build and deploy your site every time you make a change.</p>
 <p>Create a new file in your project located at .github/workflows/gh-pages.yml and paste the following configuration into it:</p>

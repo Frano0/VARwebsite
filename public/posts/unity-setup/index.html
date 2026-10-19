@@ -100,6 +100,8 @@
   
   
   
+    
+  
   
     
   
@@ -243,7 +245,7 @@
     "keywords": ["Unity"],
     
     "mainEntityOfPage": "http://localhost:1313/VARwebsite/posts/unity-setup/",
-    "wordCount":  504 
+    "wordCount":  500 
   }]
   </script>
 
@@ -762,25 +764,70 @@
       
       
       
+        <div class="order-first lg:ms-auto px-0 lg:order-last lg:ps-8 lg:max-w-2xs">
+          <div class="toc ps-5 print:hidden lg:sticky lg:top-[140px]">
+            <details
+  open
+  id="TOCView"
+  class="toc-right mt-0 overflow-y-auto overscroll-contain bf-scrollbar rounded-lg -ms-5 ps-5 pe-2 hidden lg:block">
+  <summary
+    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 -ms-5 ps-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="min-w-[220px] py-2 border-dotted border-s-1 -ms-5 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContents" aria-label="Table of Contents">
+  <ul>
+    <li><a href="#the-basics">The Basics</a></li>
+    <li><a href="#installing-unity-on-windows">Installing Unity on Windows</a>
+      <ul>
+        <li><a href="#1-download-unity-hub">1. Download Unity Hub</a></li>
+        <li><a href="#2-sign-in-and-get-a-license">2. Sign in and get a License</a></li>
+        <li><a href="#3-install-the-unity-editor">3. Install the Unity Editor</a></li>
+        <li><a href="#4-create-your-first-project">4. Create Your First Project</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+<details class="toc-inside mt-0 overflow-hidden rounded-lg -ms-5 ps-5 lg:hidden">
+  <summary
+    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 -ms-5 ps-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="py-2 border-dotted border-neutral-300 border-s-1 -ms-5 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContentsMobile" aria-label="Table of Contents">
+  <ul>
+    <li><a href="#the-basics">The Basics</a></li>
+    <li><a href="#installing-unity-on-windows">Installing Unity on Windows</a>
+      <ul>
+        <li><a href="#1-download-unity-hub">1. Download Unity Hub</a></li>
+        <li><a href="#2-sign-in-and-get-a-license">2. Sign in and get a License</a></li>
+        <li><a href="#3-install-the-unity-editor">3. Install the Unity Editor</a></li>
+        <li><a href="#4-create-your-first-project">4. Create Your First Project</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+
+
+          </div>
+        </div>
+      
 
 
       <div class="min-w-0 min-h-0 max-w-fit">
         
 
         <div class="article-content max-w-prose mb-20">
-          
-<h2 class="relative group">Setting Up Unity
-    <div id="setting-up-unity" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#setting-up-unity" aria-label="Anchor">#</a>
-    </span>
-    
-</h2>
-<p>In this guide, we’ll walk through how to get Unity up and running on a Windows machine and cover the basic concepts you need to know to get started.</p>
+          <p>In this guide, we’ll walk through how to get Unity up and running on a Windows machine and cover the basic concepts you need to know to get started.</p>
 
-<h3 class="relative group">The Basics
+<h2 class="relative group">The Basics
     <div id="the-basics" class="anchor"></div>
     
     <span
@@ -788,7 +835,7 @@
         <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#the-basics" aria-label="Anchor">#</a>
     </span>
     
-</h3>
+</h2>
 <p>Before we download anything, let&rsquo;s briefly go over what Unity actually is. Unity is a <strong>game engine</strong>—a software environment that handles the heavy lifting of game development (like rendering graphics, calculating physics, and managing audio) so you don&rsquo;t have to code those systems from scratch.</p>
 <p>Here are the core concepts you&rsquo;ll work with inside the engine:</p>
 <ul>
@@ -804,7 +851,7 @@
 <em> Example of a project window in Unity </em></p>
 <hr>
 
-<h3 class="relative group">Installing Unity on Windows
+<h2 class="relative group">Installing Unity on Windows
     <div id="installing-unity-on-windows" class="anchor"></div>
     
     <span
@@ -812,11 +859,11 @@
         <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#installing-unity-on-windows" aria-label="Anchor">#</a>
     </span>
     
-</h3>
+</h2>
 <p>Unity uses a management application called <strong>Unity Hub</strong>. This app organizes your different Unity projects and lets you install different versions of the Unity Editor (which is crucial, as different projects often require specific versions of the engine).</p>
 <p>Here is the step-by-step process to get everything installed:</p>
 
-<h4 class="relative group">1. Download Unity Hub
+<h3 class="relative group">1. Download Unity Hub
     <div id="1-download-unity-hub" class="anchor"></div>
     
     <span
@@ -824,10 +871,10 @@
         <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#1-download-unity-hub" aria-label="Anchor">#</a>
     </span>
     
-</h4>
+</h3>
 <p>Head over to the <a href="https://unity.com/download"  target="_blank" rel="noreferrer">official Unity download page</a> and click the <strong>Download for Windows</strong> button. Run the installer <code>.exe</code> file that downloads and follow the standard Windows installation prompts.</p>
 
-<h4 class="relative group">2. Sign in and get a License
+<h3 class="relative group">2. Sign in and get a License
     <div id="2-sign-in-and-get-a-license" class="anchor"></div>
     
     <span
@@ -835,11 +882,11 @@
         <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#2-sign-in-and-get-a-license" aria-label="Anchor">#</a>
     </span>
     
-</h4>
+</h3>
 <p>Open Unity Hub. You will be prompted to sign in with your Unity ID. If you don&rsquo;t have an account, create one (it&rsquo;s free).
 Once logged in, you need a license. Go to <strong>Preferences (the gear icon) &gt; Licenses &gt; Add License</strong>. Choose <strong>Get a free personal license</strong>, or anything else that fits you.</p>
 
-<h4 class="relative group">3. Install the Unity Editor
+<h3 class="relative group">3. Install the Unity Editor
     <div id="3-install-the-unity-editor" class="anchor"></div>
     
     <span
@@ -847,11 +894,11 @@ Once logged in, you need a license. Go to <strong>Preferences (the gear icon) &g
         <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#3-install-the-unity-editor" aria-label="Anchor">#</a>
     </span>
     
-</h4>
+</h3>
 <p>In Unity Hub, navigate to the <strong>Installs</strong> tab on the left menu and click the <strong>Install Editor</strong> button.
 You will see several versions. Always choose the recommended <strong>LTS (Long Term Support)</strong> release unless you have a specific reason not to. LTS versions are the most stable and receive updates for longer.</p>
 
-<h4 class="relative group">4. Create Your First Project
+<h3 class="relative group">4. Create Your First Project
     <div id="4-create-your-first-project" class="anchor"></div>
     
     <span
@@ -859,7 +906,7 @@ You will see several versions. Always choose the recommended <strong>LTS (Long T
         <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#4-create-your-first-project" aria-label="Anchor">#</a>
     </span>
     
-</h4>
+</h3>
 <p>Once the Editor finishes installing, go to the <strong>Projects</strong> tab in Unity Hub and click <strong>New project</strong>.
 Select a template (e.g., 2D Core or 3D Core), give your project a name, choose a folder to save it in, and click <strong>Create project</strong>.</p>
 <p>Unity will now launch your brand-new project! The first time it opens, it might take a few minutes to import assets and set up the initial files.</p>
