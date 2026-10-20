@@ -9,7 +9,17 @@
     <managingEditor>francois.grastilleur@telecom-sudparis.eu (François Grastilleur)</managingEditor>
     <webMaster>francois.grastilleur@telecom-sudparis.eu (François Grastilleur)</webMaster>
     <copyright>© 2026 François Grastilleur</copyright>
-    <lastBuildDate>Mon, 19 Oct 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/VARwebsite/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 20 Oct 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/VARwebsite/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Human-Computer Interface</title>
+      <link>http://localhost:1313/VARwebsite/tags/human-computer-interface/</link>
+      <pubDate>Tue, 20 Oct 2026 00:00:00 +0000</pubDate>
+      <author>francois.grastilleur@telecom-sudparis.eu (François Grastilleur)</author>
+      <guid>http://localhost:1313/VARwebsite/tags/human-computer-interface/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>Gaussian Splatting</title>
@@ -47,16 +57,6 @@
       <pubDate>Sun, 18 Oct 2026 00:00:00 +0000</pubDate>
       <author>francois.grastilleur@telecom-sudparis.eu (François Grastilleur)</author>
       <guid>http://localhost:1313/VARwebsite/tags/ml/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Human-Computer Interface</title>
-      <link>http://localhost:1313/VARwebsite/tags/human-computer-interface/</link>
-      <pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
-      <author>francois.grastilleur@telecom-sudparis.eu (François Grastilleur)</author>
-      <guid>http://localhost:1313/VARwebsite/tags/human-computer-interface/</guid>
       <description></description>
       
     </item>
